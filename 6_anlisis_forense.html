@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_lightbox.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>6. Análisis forense | Seguridad y bienestar digital </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Carlos Rodríguez Rosano" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_lightbox.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-20"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Seguridad y bienestar digital</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Seguridad y bienestar digital</a></li>
+   <li><a href="1_presentacin.html" class="no-ch">1. Presentación</a></li>
+   <li><a href="2_vctimas_de_un_ciberataque.html" class="no-ch">2. Víctimas de un ciberataque</a></li>
+   <li><a href="3_contraseas_y_antivirus.html" class="daddy">3. Contraseñas y antivirus</a>
+   <ul class="other-section">
+      <li><a href="31_tu_contrasea_no_es_segura.html" class="no-ch">3.1. Tu contraseña no es segura</a></li>
+      <li><a href="32_virus_troyanos_y_gusanos.html" class="no-ch">3.2. Virus, troyanos y gusanos</a></li>
+   </ul>
+   </li>
+   <li><a href="4_quiero_ser_un_hacker.html" class="daddy">4. Quiero ser un Hacker</a>
+   <ul class="other-section">
+      <li><a href="41_hacking_tico.html" class="no-ch">4.1. Hacking ético</a></li>
+      <li><a href="42_tipos_de_ataques.html" class="no-ch">4.2. Tipos de ataques</a></li>
+   </ul>
+   </li>
+   <li><a href="5_vulnerabilidades_en_sistemas.html" class="daddy">5. Vulnerabilidades en sistemas</a>
+   <ul class="other-section">
+      <li><a href="51_ingeniera_social.html" class="no-ch">5.1. Ingeniería social</a></li>
+      <li><a href="52_atacamos_un_equipo.html" class="no-ch">5.2. Atacamos un equipo</a></li>
+      <li><a href="53_anlisis_de_riesgos.html" class="daddy">5.3. Análisis de riesgos</a>
+      <ul class="other-section">
+         <li><a href="531_medidas_de_proteccin.html" class="no-ch">5.3.1 Medidas de protección</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li id="active"><a href="6_anlisis_forense.html" class="active daddy">6. Análisis forense</a>
+   <ul>
+      <li><a href="61_herramientas_y_tcnicas_de_anlisis.html" class="no-ch">6.1. Herramientas y técnicas de análisis</a></li>
+   </ul>
+   </li>
+   <li><a href="7_ciberdelitos.html" class="daddy">7. Ciberdelitos</a>
+   <ul class="other-section">
+      <li><a href="71_repercusiones_legales.html" class="no-ch">7.1. Repercusiones legales</a></li>
+   </ul>
+   </li>
+   <li><a href="8_nuestro_informe_final.html" class="no-ch">8. Nuestro informe final</a></li>
+   <li><a href="9_presentamos_nuestro_trabajo.html" class="no-ch">9. Presentamos nuestro trabajo</a></li>
+   <li><a href="10_sacamos_conclusiones.html" class="no-ch">10. Sacamos conclusiones</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="531_medidas_de_proteccin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>15</strong> de <strong>22</strong></span> <span class="sep">| </span><a href="61_herramientas_y_tcnicas_de_anlisis.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">6. Análisis forense</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id98">
+<div class="iDevice emphasis0" >
+<div id="ta98_609_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><img src="retor_adultos_conbocadillo.gif" alt="Retor" title="Retor" width="250" height="250" style="float: left; margin-right: 15px; margin-left: 15px;">Cuando se produce un ataque cibermético es necesario realizar dos tipos de intervenciones:</p>
+<p>&nbsp; &nbsp; &nbsp;1. Averiguar qué ha pasado y quienes son los responsables.</p>
+<p>&nbsp; &nbsp; &nbsp;2. Reparar los daños causados (recuperar datos, equipos, etc...)</p>
+<p style="text-align: justify;">El análisis forense es una disciplina que combina los elementos del&nbsp;<strong>derecho&nbsp;y la&nbsp;informática</strong>&nbsp;para <strong>recopilar y analizar</strong> datos de sistemas informáticos, redes, comunicaciones inalámbricas y dispositivos de almacenamiento de una manera que sea admisible como prueba en un tribunal de justicia.</p></div></div></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_curiosidad" id="id62">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">1. Análisis de IPs.</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta62_115_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><figure class="exe-figure exe-image float-left" style="width: 200px; text-align: center;"><a href="webies.1.PNG" rel="lightbox" title="Imagen de seguridad de WordPress"><img src="webies.1.PNG" alt="Web IES" title="Web IES" style="margin: 10px 20px 10px 20px;" width="200" vspace="10" hspace="20" height="310"></a>
+<figcaption class="figcaption"><span class="title" style="font-size: 10pt;"><em>Clic para aumentar</em></span></figcaption>
+</figure>
+<p>En la imagen puedes ver un informe de un<strong> <a href="#t2545d769-0d3c-70cc-6043-f65903ec9820" id="link2545d769-0d3c-70cc-6043-f65903ec9820" class="exe-tooltip definition-tt titled-tt" title="Plugin | Accede a la definición de plugin">plugin</a></strong>&nbsp;de seguridad de Wordpress, donde nos muestra las IPs de los <a href="#t313eac2b-fa33-375e-d3b7-c402fde0975f" id="link313eac2b-fa33-375e-d3b7-c402fde0975f" class="exe-tooltip definition-tt titled-tt shadowed-tt" title="host | Accede a la definición de host"><strong>host</strong></a> desde donde se han producido varios intentos de atacar la Web de un Instituto de Secundaria.</p>
+<p>Vamos a investigar un poco&nbsp; para ver su origen :</p>
+<p style="padding-left: 120px;">&nbsp; &nbsp;¿Cuál es la IP del atacante?</p>
+<p style="padding-left: 120px;">&nbsp; &nbsp;¿Desde dónde se han producido el ataque?</p>
+<p style="padding-left: 120px;">&nbsp; &nbsp;¿Coincide con el origen del listado?</p>
+<p>En la siguientes páginas encontrarás un par de&nbsp; herramientas que&nbsp;te ayudará a geolocalizar tu IP actual y la IP que escribas en el cuadro de texto, de forma fácil y rápida.<br>Ten en cuenta que los resultados que muestra la geolocalización de IP por coordenadas (latitud y longitud) es aproximado. Estos datos deben ser tomados con carácter orientativo.</p>
+<p>Prueba a geolocalizar al menos , tres de las IPs del informe de la foto.</p>
+<ul>
+<li>Geolocalizar mi ip en la web <a href="https://www.cual-es-mi-ip.net/" target="_blank" title="Accede a la web cuál es mi ip.net" rel="noopener">cual-es-mi-ip.net.</a></li>
+<li>Geolocalizar ip en <a href="https://www.adslayuda.com/geolocalizacion.html" target="_blank" title="accede a la web adslayuda.com para localizar tu ip" rel="noopener">adslayuda.com/geolocalizacion.html</a></li>
+</ul>
+<div id="t313eac2b-fa33-375e-d3b7-c402fde0975f" class="exe-tooltip-text">
+<p>El término host o anfitrión se usa en informática para referirse a las computadoras u otros dispositivos (tabletas, móviles, portátiles) conectados a una red que proveen y utilizan servicios de ella.</p>
+</div>
+<div id="t2545d769-0d3c-70cc-6043-f65903ec9820" class="exe-tooltip-text">
+<p>En informática, un complemento o plug-in es una aplicación (o programa informático) que se relaciona con otra para agregarle una función nueva y generalmente muy específica.</p>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2><span class="sr-av">Lumen dice </span>¿Alguien puede saber algo de mí usando geolocalización IP?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Poca cosa más que la ciudad en la que vives&nbsp;(o desde dónde dices conectarte en el caso que emplees alguna tecnología para enmascarar la procedencia de tu IP, como un proxy o una VPN).&nbsp;De todas formas, solamente este dato ya puede ser algo preocupante para las personas preocupadas con su privacidad y seguridad.</p>
+<p>No obstante, piensa que, en primer lugar, para saber desde dónde te conectas, otra persona deberá conocer en primer lugar tu dirección IP, lo cual puede ser fácil si se tienen conocimientos técnicos, pero no lo es en absoluto si se carece de ellos.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_debate" id="id105">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">2. Un caso real</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta105_118_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><strong>Reflexiona en grupo sobre la lectura siguiente y sus implicaciones éticas y morales.</strong></p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Lectura</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><h3>El tapón legal que impide que el móvil sirva para encontrar a personas desaparecidas.</h3>
+<p>El cuerpo sin vida de Juan Manuel Zornoza se encontró en la Serra de Gallcanta, cerca de Manresa. Tenía 68 años, había salido a caminar por la mañana y empezaron a buscarlo después de mediodía. Pese a que su móvil daba tono de llamada, es decir, estaba encendido y con cobertura, fue imposible localizarlo y ahorrar un día entero de búsqueda.</p>
+<p>La familia pidió que se utilizara cualquier medio para localizar el&nbsp;smartphone&nbsp;del desaparecido. Se intentó la triangulación por antenas, pero no daba un punto preciso. Y no había ningún cauce rápido y legal para obtener la geolocalización del móvil, normalmente activada por defecto en estos dispositivos. Los equipos de rescate siempre aluden a la importancia de las primeras horas para encontrar con vida a la persona. Pero aquí se topan con un muro en el que están implicados el derecho a la privacidad, la burocracia interna de las compañías y la falta de protocolos de actuación.</p>
+<p>Google&nbsp;y&nbsp;Apple, las dos empresas que dominan los sistemas operativos de los móviles, registran información periódica sobre la ubicación de los Android y de los iPhone. Cuando esta se encuentra activada se emplea para mejorar algunos servicios, así como para enviar publicidad online basándose en intereses personales. En las políticas de Google se ilustra con este ejemplo: “Si tienes el historial de ubicaciones habilitado y visitas estaciones de esquí frecuentemente, puede que se te muestre un anuncio de equipamiento de esquí al ver un vídeo en YouTube”.</p>
+<p>“Desde hace unos años, cuando empezó a mandarse la ubicación por WhatsApp, esto ha pegado un salto tremendo. Ahora, cuando alguien se pierde, se le localiza en cuestión de minutos si te consigue mandar el mensaje con la localización.&nbsp;Es ir a tiro hecho”, afirma Miguel Ángel Rodríguez, jefe de dotación del GERA en Navacerrada. “Antes no era así. Cuando tú contactabas, aunque la persona te cogiera el teléfono, solo te podía decir desde dónde había salido, por dónde había circulado, qué veía.”.</p>
+<p>El caso de Juan Manuel Zornoza muestra la realidad de otro tipo de búsquedas, en las que no se puede contactar con la persona, pese a que el móvil tiene cobertura. Isabel, su mujer, solo tiene palabras de agradecimiento para los equipos de rescate y para los voluntarios que ayudaron en aquellas horas de incertidumbre. Pero le queda la amargura de que no se pudiera localizar el móvil de ninguna forma. No puede comprender cómo con toda la tecnología que existe hoy esto no era posible. La respuesta de los equipos de búsqueda siempre era la misma: no es legal. “Pero en un caso de vida o muerte…”, insiste ella.</p>
+<p>Para buscar a Juan Manuel se desplegaron dos helicópteros y ocho dotaciones terrestres, de Mossos d’Esquadra y Bombers de la Generalitat de Catalunya. Se pidió la triangulación de las antenas para localizar el terminal, pero no se pudo hacer nada para obtener la ubicación del&nbsp;smartphone&nbsp;que registra periódicamente la cuenta de Google (en este caso se trataba de un Android). Finalmente un familiar lo encontró, ya fallecido, buscando con su moto de motocross. Había pasado un día entero.</p>
+<p style="text-align: right;"><span style="font-size: 10pt;">Fuente <a href="https://elpais.com/retina/2020/08/19/innovacion/1597849441_736107.html" target="_blank" rel="noopener">EL PAIS Transformación Digital</a></span></p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2><span class="sr-av">Lumen dice </span>¿Qué es lo importante?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><strong>Céntrate en responder a preguntas como las siguientes:</strong></p>
+<ul>
+<li>¿Sabes enviar tu geolocalización con tu móvil?</li>
+<li>¿Lo has hecho alguna vez?, pon ejemplos.</li>
+<li>¿Es más importante el derecho a la privacidad o la integridad física?</li>
+<li>¿Crees que es bueno que Google o Apple sepan siempre tu localización?</li>
+<li>¿Para qué quieren esa información?</li>
+</ul></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="531_medidas_de_proteccin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>15</strong> de <strong>22</strong></span> <span class="sep">| </span><a href="61_herramientas_y_tcnicas_de_anlisis.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>

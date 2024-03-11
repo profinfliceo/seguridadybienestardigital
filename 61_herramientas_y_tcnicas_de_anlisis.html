@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>6.1. Herramientas y técnicas de análisis | Seguridad y bienestar digital </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Carlos Rodríguez Rosano" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-21"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Seguridad y bienestar digital</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Seguridad y bienestar digital</a></li>
+   <li><a href="1_presentacin.html" class="no-ch">1. Presentación</a></li>
+   <li><a href="2_vctimas_de_un_ciberataque.html" class="no-ch">2. Víctimas de un ciberataque</a></li>
+   <li><a href="3_contraseas_y_antivirus.html" class="daddy">3. Contraseñas y antivirus</a>
+   <ul class="other-section">
+      <li><a href="31_tu_contrasea_no_es_segura.html" class="no-ch">3.1. Tu contraseña no es segura</a></li>
+      <li><a href="32_virus_troyanos_y_gusanos.html" class="no-ch">3.2. Virus, troyanos y gusanos</a></li>
+   </ul>
+   </li>
+   <li><a href="4_quiero_ser_un_hacker.html" class="daddy">4. Quiero ser un Hacker</a>
+   <ul class="other-section">
+      <li><a href="41_hacking_tico.html" class="no-ch">4.1. Hacking ético</a></li>
+      <li><a href="42_tipos_de_ataques.html" class="no-ch">4.2. Tipos de ataques</a></li>
+   </ul>
+   </li>
+   <li><a href="5_vulnerabilidades_en_sistemas.html" class="daddy">5. Vulnerabilidades en sistemas</a>
+   <ul class="other-section">
+      <li><a href="51_ingeniera_social.html" class="no-ch">5.1. Ingeniería social</a></li>
+      <li><a href="52_atacamos_un_equipo.html" class="no-ch">5.2. Atacamos un equipo</a></li>
+      <li><a href="53_anlisis_de_riesgos.html" class="daddy">5.3. Análisis de riesgos</a>
+      <ul class="other-section">
+         <li><a href="531_medidas_de_proteccin.html" class="no-ch">5.3.1 Medidas de protección</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="6_anlisis_forense.html" class="current-page-parent daddy">6. Análisis forense</a>
+   <ul>
+      <li id="active"><a href="61_herramientas_y_tcnicas_de_anlisis.html" class="active no-ch">6.1. Herramientas y técnicas de análisis</a></li>
+   </ul>
+   </li>
+   <li><a href="7_ciberdelitos.html" class="daddy">7. Ciberdelitos</a>
+   <ul class="other-section">
+      <li><a href="71_repercusiones_legales.html" class="no-ch">7.1. Repercusiones legales</a></li>
+   </ul>
+   </li>
+   <li><a href="8_nuestro_informe_final.html" class="no-ch">8. Nuestro informe final</a></li>
+   <li><a href="9_presentamos_nuestro_trabajo.html" class="no-ch">9. Presentamos nuestro trabajo</a></li>
+   <li><a href="10_sacamos_conclusiones.html" class="no-ch">10. Sacamos conclusiones</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="6_anlisis_forense.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>16</strong> de <strong>22</strong></span> <span class="sep">| </span><a href="7_ciberdelitos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">6.1. Herramientas y técnicas de análisis</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_rep_lee" id="id124">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">2. Método de análisis</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta124_123_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Algunos de los aspectos más importantes del análisis forense se resumen a continuación:</p>
+<div class="exe-fx exe-paginated">
+<h2>¿Qué es la informática forense?</h2>
+<p>Un<strong> análisis forense</strong> consiste en la extracción de datos de un dispositivo informático, preservando la veracidad de los datos extraidos.</p>
+<p>El Subinspector de la unidad central de ciberdelincuencia de Policía Nacional nos explica qué es la informática forense y que aplicaciones tiene en las investigaciones policiales.</p>
+<figure class="exe-figure exe-media position-center license-CC0" style="width: 560px; text-align: center;"><iframe src="https://www.youtube.com/embed/SEZKuTWMZ_o" allowfullscreen="allowfullscreen" data-mce-fragment="1" width="560" height="314"></iframe>
+<figcaption class="figcaption"></figcaption>
+</figure>
+<h2>¿Qué casos&nbsp; se investigan?</h2>
+<p><strong>Los incidentes de seguridad:</strong></p>
+<ul>
+<li>Robo de información.</li>
+<li>Intrusión de redes.</li>
+<li>Espionaje industrial, etc</li>
+</ul>
+<p><strong>Delitos:</strong></p>
+<p>Siempre que sirva como prueba:</p>
+<ul>
+<li>Delitos de sangre.</li>
+<li>Secuestros.</li>
+<li>Delitos relacionados con menores.</li>
+<li>Etc.</li>
+</ul>
+<h2>Datos latentes</h2>
+<figure class="exe-figure exe-image float-left license-CC-BY-NC-SA" style="width: 300px; text-align: center;"><img src="recovery_backup.jpg" alt="Recuperación de datos" title="Recuperación de datos" style="margin-right: 15px; margin-left: 15px;" width="300" hspace="15" height="196">
+<figcaption class="figcaption"></figcaption>
+</figure>
+<p style="text-align: justify;"><strong>1.</strong> Información que se encuentra en el <strong>almacenamiento</strong> del ordenador pero que no se menciona fácilmente en las tablas de asignación de archivos.</p>
+<p style="text-align: justify;"><strong>2.</strong> Información que el sistema operativo o las <strong>aplicaciones</strong> de software de uso común no pueden ver fácilmente.</p>
+<p style="text-align: justify;"><strong>3. Datos que se han eliminado deliberadamente</strong> y ahora se encuentran en:</p>
+<ul style="list-style-type: circle;">
+<li>&nbsp; Espacios no asignados en el disco duro.&nbsp;</li>
+<li>&nbsp; Archivos de intercambio.</li>
+<li>&nbsp; Archivos de cola de impresión.</li>
+<li>&nbsp; Volcados de memoria.</li>
+<li>&nbsp; El espacio&nbsp; entre los archivos existentes y el caché temporal.</li>
+</ul>
+<h2>Objetivos del análisis forense</h2>
+<ol>
+<li>Ayuda a<strong> recuperar, analizar y preservar</strong> el ordenador y los materiales relacionados de tal manera que ayuda&nbsp; a presentarlos como <strong>evidencia en un tribunal de justicia</strong>.</li>
+<li>M<strong>otivo</strong> detrás del crimen y la <strong>identidad</strong> del principal culpable.</li>
+<li>Diseñar procedimientos para <strong>garantizar que la evidencia</strong> digital obtenida no esté corrupta.</li>
+<li>Adquisición y duplicación de datos: <strong>recuperación de archivos</strong> eliminados y particiones eliminadas de medios digitales para extraer la evidencia y validarlos.</li>
+<li>Producir un <strong>informe forense</strong> informático que ofrece un informe completo sobre el proceso de investigación.</li>
+<li>Preservar la evidencia siguiendo la <strong>cadena de custodia</strong>.</li>
+</ol>
+<h2>Tipos de análisis</h2>
+<ul style="list-style-type: disc;">
+<li>De <strong>sistemas operativos</strong>&nbsp;del ordenador o dispositivo móvil en cuestión.</li>
+<li>De<strong> redes</strong> cuando se refiere a la recopilación, monitorización y análisis de las actividades de la red para descubrir la fuente de ataques.</li>
+<li>De <strong>dispositivos móviles</strong> que por su uso extendido, se ha convertido en una parte importante del&nbsp;análisis forense digital.</li>
+<li>En la <strong>nube o Cloud</strong> pues hoy en día, la mayoría de los datos críticos de las empresas se han transferido a los proveedores de servicios en la nube.</li>
+</ul>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper TrueFalseIdevice em_iDevice em_iDevice_question" id="id103">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">2. Responde a estas cuestiones</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta103_100" class="block iDevice_content">
+
+</div>
+<section class="question">
+<form name="true-false-form-0b103" action="#" class="activity-form">
+<h1 class="js-sr-av">Pregunta 1</h1>
+<div id="taquestion0b103" class="block iDevice_content">
+<p><strong>1. El análisis forense es una disciplina que sólo implica a la informática.</strong></p>
+</div>
+<p class="iDevice_answer js-required">
+<label for="true0b103"><input type="radio" name="option0b103" id="true0b103" class="exe-radio-option exe-radio-option-0-2-0b103-truefalse" /> Verdadero</label> 
+<label for="false0b103"><input type="radio" name="option0b103" id="false0b103" class="exe-radio-option exe-radio-option-1-2-0b103-truefalse" /> Falso</label>
+</p>
+</form>
+<section id="s0b103" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p><strong id="s0b103-result" class="wrong">Falso</strong></p>
+<p> Combina los elementos del derecho y la informática</p>
+</section>
+</section>
+<section class="question">
+<form name="true-false-form-1b103" action="#" class="activity-form">
+<h1 class="js-sr-av">Pregunta 2</h1>
+<div id="taquestion1b103" class="block iDevice_content">
+<p><strong>2. Los datos borrados en el disco duro ya no se pueden recuperar.</strong></p>
+</div>
+<p class="iDevice_answer js-required">
+<label for="true1b103"><input type="radio" name="option1b103" id="true1b103" class="exe-radio-option exe-radio-option-0-2-1b103-truefalse" /> Verdadero</label> 
+<label for="false1b103"><input type="radio" name="option1b103" id="false1b103" class="exe-radio-option exe-radio-option-1-2-1b103-truefalse" /> Falso</label>
+</p>
+</form>
+<section id="s1b103" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p><strong id="s1b103-result" class="wrong">Falso</strong></p>
+<p>Si se pueden recuperar y existen herramientas como <a href="https://es.wikipedia.org/wiki/Magicrescue" target="_blank" rel="noopener">magicrescue</a> en Kali Linux que te lo permiten.</p>
+</section>
+</section>
+<section class="question">
+<form name="true-false-form-2b103" action="#" class="activity-form">
+<h1 class="js-sr-av">Pregunta 3</h1>
+<div id="taquestion2b103" class="block iDevice_content">
+<p><strong>3. La cadena de custodia es el conjunto de procesos que se dan desde que la policía interviene las pruebas de un delito, hasta que se analizan o exponen en la fase de instrucción o en el juicio.</strong></p>
+</div>
+<p class="iDevice_answer js-required">
+<label for="true2b103"><input type="radio" name="option2b103" id="true2b103" class="exe-radio-option exe-radio-option-0-2-2b103-truefalse" /> Verdadero</label> 
+<label for="false2b103"><input type="radio" name="option2b103" id="false2b103" class="exe-radio-option exe-radio-option-1-2-2b103-truefalse" /> Falso</label>
+</p>
+</form>
+<section id="s2b103" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p><strong id="s2b103-result" class="right">Verdadero</strong></p>
+<p style="text-align: justify;">Efectivamente, son las medidas de seguridad que tienen el fin de garantizar la preservación de los bienes materiales o documentales. Y evitar así manipulaciones indebidas que los terminen invalidando como parte de una investigación judicial.</p>
+</section>
+</section>
+<section class="question">
+<form name="true-false-form-3b103" action="#" class="activity-form">
+<h1 class="js-sr-av">Pregunta 4</h1>
+<div id="taquestion3b103" class="block iDevice_content">
+<p><strong>4. Hoy en día, la mayoría de los datos críticos de las empresas se encuentran en sus discos duros por lo que son requisados y examinados.</strong></p>
+</div>
+<p class="iDevice_answer js-required">
+<label for="true3b103"><input type="radio" name="option3b103" id="true3b103" class="exe-radio-option exe-radio-option-0-2-3b103-truefalse" /> Verdadero</label> 
+<label for="false3b103"><input type="radio" name="option3b103" id="false3b103" class="exe-radio-option exe-radio-option-1-2-3b103-truefalse" /> Falso</label>
+</p>
+</form>
+<section id="s3b103" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p><strong id="s3b103-result" class="wrong">Falso</strong></p>
+<p>Hoy en día, la mayoría de los datos críticos de las empresas se han transferido a los proveedores de servicios en la nube o cloud.</p>
+</section>
+</section>
+<section class="question">
+<form name="true-false-form-4b103" action="#" class="activity-form">
+<h1 class="js-sr-av">Pregunta 5</h1>
+<div id="taquestion4b103" class="block iDevice_content">
+<p><strong>5. La informática forense se puede utilizar para investigar un homicidio aunque no intervenga ningún ordenador.</strong></p>
+</div>
+<p class="iDevice_answer js-required">
+<label for="true4b103"><input type="radio" name="option4b103" id="true4b103" class="exe-radio-option exe-radio-option-0-2-4b103-truefalse" /> Verdadero</label> 
+<label for="false4b103"><input type="radio" name="option4b103" id="false4b103" class="exe-radio-option exe-radio-option-1-2-4b103-truefalse" /> Falso</label>
+</p>
+</form>
+<section id="s4b103" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p><strong id="s4b103-result" class="right">Verdadero</strong></p>
+<p>Es transversal a cualquier investigación, pues todo el mundo utiliza móviles y el estudio de los mensajes o geolocalización, son fundamentales para muchas investigaciones.</p>
+</section>
+</section>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="6_anlisis_forense.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>16</strong> de <strong>22</strong></span> <span class="sep">| </span><a href="7_ciberdelitos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
